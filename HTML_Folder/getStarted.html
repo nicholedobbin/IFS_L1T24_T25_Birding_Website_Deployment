@@ -1,0 +1,188 @@
+<!--
+======================================================================= DESCRIPTION ======================================================================
+This is the Getting Started page, containing 3 sections:
+    1) Header section with background image, title, subtitle & internal navigation links.
+    2) Birding Ethics section with title, paragraph, list, external links and image.
+    3) Things Needed section with title, paragraph, list, external links, image and blockquote.
+
+Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+===========================================================================================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birding: Get Started Guide</title>
+    <!-- Link to Bootstrap's CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+      crossorigin="anonymous"
+    >
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to SCSS file's compiled "main.css"-->
+    <link href="../SCSS_folder/main.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "scripting.js" -->
+    <script type="text/javascript" src="../JS_Folder/scripting.js"></script>
+</head>
+
+<body>
+    <!-- Header Section Container -->
+    <div class="jumbotron jumbotron-fluid getStartedHeaderBackgroundImage">    
+        <div class="container">
+            <!-- Heading Section with background image, internal navigation links, <h1> header title "Getting Started" and horizontal row. -->
+            <div class="headerBackgroundImage text-center shadow-1-strong rounded text-white">
+                <ul class="nav justify-content-start">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../HTML_Folder/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../HTML_Folder/films.html">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../saveForLater.html">Saved Items</a>
+                    </li>
+                </ul>
+                <h1 class="display-1" id="headerTitle">Getting Started</h1>
+                <hr class="my-3">
+                <!-- Sub-Heading with <p> sub-text and <a> internal navigation buttons linking to sections: "Ethics" and "thingsNeeded". -->
+                <p class="fs-1 pt-4">First time birder? Try these helpful tips</p>
+                <br>
+                <p class="text-secondary my-3">
+                    <a class="btn btn-lg btn-primary" href="#ethics" role="button">Birding Ethics</a>
+                    <a class="btn btn-lg btn-primary" href="#thingsNeeded" role="button">Things you'll need</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ethics Section Container. -->
+    <div class="container-border py-5" id="lightContainer">
+        <div class="container my-5">
+            <div class="row">
+                <!-- Image Section. -->
+                <div class="col-sm-5 mb-2 saveForLater text-center">
+                    <img src="../images_Folder/ostrich.jpg" class="img-fluid rounded-5 float-start w-100" alt="ostrich in a filed of pink flowers"> <!--ethicsImage -->
+                </img>
+                <form class="like"></form> 
+                </div>
+                <!-- Information Section with <h2> "Birding Ethics" subheading, <p> text, external link and list. -->
+                <div class="col-sm-7 text-center ps-5 pe-0 saveForLater">
+                    <h2 class="fw-bold sectionHeading" id="ethics">Birding Ethics</h2>
+                    <hr class="my-4 mx-0">
+                    <p class="text-secondary fs-6">
+                        As a beginner birder, you may be wondering, "Are there any rules or codes of conduct?"
+                        These are the top two ethical conduct rules to keep in mind when beginning your birding journey.
+                        To find out more about birding ethics, visit  
+                        <a 
+                            href="https://www.westerncapebirding.co.za/news/2613/birdlife_south_africa_code_of_ethics" 
+                            target="_blank"
+                            class="externalLink">
+                            Western Cape Birding.
+                        </a> 
+                    </p>
+                    <ol class="list-group list-group-numbered text-start" id="ethicsList">
+                        <li class="list-group-item">
+                            Always behave in a way that does not endager wildlife or harm the environment.
+                        </li>
+                        <li class="list-group-item">
+                            Respect the rights of others in group birding situations.
+                        </li>
+                    </ol>
+                    <form class="like"></form> 
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Things Needed Section Container. -->         
+    <div class="container-border py-5 w-100" id="darkContainer">
+        <div class="container my-5">
+            <div class="row">
+                <!-- Information Section with <h2> "Things You'll Need" subheading, <p> text and list with external links. -->
+                <div class="col-sm-7 text-center ps-0 pe-5 py-3 saveForLater">
+                    <h2 class="fw-bold sectionHeading" id="thingsNeeded">Things you'll need</h2>
+                    <hr class="my-4 mx-4">
+                    <p class="fs-6 pb-3">
+                        Getting started with birding is easy. Here are a few useful items and resources you'll need 
+                        to begin your birding adventure today.
+                    </p>
+                    <ul class="list text-start" id="thingsNeededList">
+                        <li>A love for nature</li>
+                        <li>A good birding book like
+                            <a 
+                                href="https://www.robertsbirds.co.za/" 
+                                class="externalLink"
+                                target="_blank">
+                                Roberts Bird Guide
+                            </a>
+                        </li>
+                        <li>A pair of binoculars</li>
+                        <li>A birders society or group like
+                            <a 
+                                href="https://www.sanparks.org/groups/birders/" 
+                                target="_blank"
+                                class="externalLink">
+                                SANParks
+                            </a>
+                        </li>
+                        <li>A camera</li>
+                        <li>A bird-spotting checklist like the
+                            <a 
+                                href="https://www.sanbi.org/wp-content/uploads/2018/04/sanbi-biodiversity-series-bird-checklist-no-8.pdf" 
+                                target="_blank"
+                                class="externalLink">
+                                SANBI Bird Checklist
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="like"></form>  
+                </div>
+                
+                <!-- Blockquote Section with image background and blockquote. -->
+                <div class="col-sm-5 saveForLater text-center">
+                    <figure class="thingsNeededBackgroundImage img-fluid rounded-5 float-start w-100"> 
+                        <blockquote class="blockquote text-center">
+                            <p>“In order to see birds it is necessary to become a part of the silence.”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-center">
+                            Robert Lynd in 
+                            <cite title="Source Title">
+                                <a 
+                                    href="https://quotepark.com/authors/robert-wilson-lynd/" 
+                                    target="_blank"
+                                    class="fs-6 text-secondary smallExternalLink"
+                                >   Solomon in All His Glory
+                                </a>     
+                            </cite>
+                        </figcaption>
+                    </figure>
+                    <form class="like"></form> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootsrap's JavaScript Bundle -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!--
+======================================================================= DESCRIPTION ======================================================================
+This is the Gallery page, containing 3 sections:
+    1) Header section with title, internal navigation links, images with labels and external links to image sources.
+    2) Spotted section with title, sub-text and table.
+    3) Vote Cutest section with images and radio buttons to select favourite.
+
+Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+===========================================================================================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birding: Gallery</title>
+    <!-- Link to Bootstrap's CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+      crossorigin="anonymous"
+    >
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to SCSS file's compiled "main.css"-->
+    <link href="../SCSS_folder/main.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "scripting.js" -->
+    <script type="text/javascript" src="../JS_Folder/scripting.js"></script>
+</head>
+
+<body>
+    <!-- Header and Gallery Section Container -->
+    <div class="container-border" id="darkContainer">
+        <div class="container">
+            <!-- Heading Section with internal navigation links and <h1> header title "Gallery". -->
+            <div class="row">
+              <div class="col">
+                <ul class="nav justify-content-start">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../HTML_Folder/getStarted.html">Getting Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../HTML_Folder/films.html">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../saveForLater.html">Saved Items</a>
+                    </li>
+                </ul>
+                <h1 class="display-1 text-center" id="headerTitle">Gallery</h1>
+                <hr class="my-3">
+              </div>
+            </div>
+
+            <!-- Gallery Section with Bootstrap cards containing images and text with <a> external links to image sources. -->
+            <div class="row">
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/lilacBreastedRoller.jpg" class="card-img-top" alt="Lilac-Breasted Roller">
+                    <div class="card-body pb-0 text-center"> 
+                        <p class="card-text">
+                            Lilac-Breasted Roller
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/lK4eXU2E2ww"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by David Clode on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/darkCappedBulbul.jpg" class="card-img-top" alt="Dark-Capped Bulbul">
+                    <div class="card-body pb-0 text-center">
+                        <p class="card-text">
+                            Dark-Capped Bulbul
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/_jJR8jsYALE"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by Nicole Wreyford on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/malachiteKingfisher.jpg" class="card-img-top" alt="Malachite Kingfisher">
+                    <div class="card-body pb-0 text-center">
+                        <p class="card-text">
+                            Malachite Kingfisher
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/i6vYBVKG-GU"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by James Botes on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/capeStarling.jpg" class="card-img-top" alt="Cape Starling">
+                    <div class="card-body pb-0  text-center">
+                        <p class="card-text">
+                            Cape Starling
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/HZGO9IfdzGE"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by Marlin Clark on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/southernRedBishop.jpg" class="card-img-top" alt="Southern Red Bishop">
+                    <div class="card-body pb-0 text-center">
+                        <p class="card-text">
+                            Southern Red Bishop
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/YD9eyV39R9o"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by Valerie Bosch on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/sunbird.jpg" class="card-img-top" alt="Southern Double Collared Sunbird">
+                    <div class="card-body pb-0  text-center">
+                        <p class="card-text">
+                            Double Collared Sunbird
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/PcX1Qc0hhwk"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by Simon Caminada on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/lesserStripedSwallow.jpg" class="card-img-top" alt="Lesser Striped Swallow">
+                    <div class="card-body pb-0  text-center">
+                        <p class="card-text">
+                            Lesser Striped Swallow
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/QD2_5WuypLg"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by Nadine Venter on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+                <div class="card mx-2 my-2" style="width: 18rem;">
+                    <img src="../images_Folder/pinkFlamingo.jpg" class="card-img-top" alt="Pink Flamingo">
+                    <div class="card-body pb-0 text-center">
+                        <p class="card-text">
+                            Pink Flamingo
+                            <br>
+                            <a 
+                            href="https://unsplash.com/photos/ZL8aFWGC9Us"
+                            class="smallExternalLink"
+                            target="_blank">
+                            Photo by Marlin Clark on Unsplash
+                            </a>
+                        </p>
+                        <form class="like"></form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spotted Birds Section Container -->
+    <div class="container-border" id="lightContainer">
+        <div class="container saveForLater text-center pb-5">
+            <!-- Information Section with <h1> "Spotted" section title and <p> text.-->
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="display-5 fw-bold pt-5 pb-1">Spotted!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p class="pt-1 pb-4 text-secondary">These are all the birds I've spotted this year.</p>
+                    <hr class="my-2">
+                </div>
+            </div>
+
+            <!-- Table Section with table and <a> external links.  -->
+            <div class="row text-start pb-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class= "table-accent">#</th>
+                            <th scope="col" class= "table-accent">Bird Name</th>
+                            <th scope="col" class= "table-accent">Male/Female/Juvenile</th>
+                            <th scope="col" class= "table-accent">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Cape Robin-Chat</td>
+                            <td>M</td>
+                            <td>
+                                <a href="https://www.sanbi.org/gardens/kirstenbosch/" target="_blank" class="smallExternalLink">
+                                    Kirstenbosch Botanical Gardens
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Red Wing Starling</td>
+                            <td>M, F, J</td>
+                            <td>
+                                <a href="https://tablemountain.net/" target="_blank" class="smallExternalLink">
+                                    Table Mountain
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Yellow Canary</td>
+                            <td>M</td>
+                            <td>
+                                <a href="https://intaka.co.za/" target="_blank" class="smallExternalLink">
+                                    Intaka Island
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Cape Wagtail</td>
+                            <td>M, F</td>
+                            <td>
+                                <a href="https://intaka.co.za/" target="_blank" class="smallExternalLink">
+                                    Intaka Island
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Yellow Billed Duck</td>
+                            <td>M, F, J</td>
+                            <td>
+                                <a href="https://intaka.co.za/" target="_blank" class="smallExternalLink">
+                                    Intaka Island
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Hadeda Ibis</td>
+                            <td>M, F</td>
+                            <td>
+                                <a href="https://www.sanbi.org/gardens/kirstenbosch/" target="_blank" class="smallExternalLink">
+                                    Kirstenbosch Botanical Gardens
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Southern Double Collared Sunbird</td>
+                            <td>M, F</td>
+                            <td>
+                                <a href="https://www.sanbi.org/gardens/kirstenbosch/" target="_blank" class="smallExternalLink">
+                                    Kirstenbosch Botanical Gardens
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br class="my-5">
+            </div>
+            <form class="like"></form> 
+        </div>
+    </div>
+
+    <!-- Cutest Bird Section Container -->
+    <div class="container-border" id="darkContainer">
+        <div class="container saveForLater text-center pb-5">
+            <!-- Information Section with <h1> "Who's the cutest?" section title and <p> text.-->
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-5 fw-bold pt-5 pb-1">Who's the cutest?</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="pt-1 pb-4 text-secondary">Vote for the cutest bird in our Top 3 list below.</p>
+                        <hr class="my-2">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Form and Radio Button Section with images and form-check radio buttons. -->
+            <div class="row">
+                <div class="col-4 py-4">
+                    <img 
+                        src="../images_Folder/lesserStripedSwallow.jpg" 
+                        alt="Lesser Sriped Swallow"
+                        class="img-fluid">
+                </div>
+                <div class="col-4 py-4">
+                    <img 
+                        src="../images_Folder/sunbird.jpg" 
+                        alt="Southern Double Collared Sunbird"
+                        class="img-fluid">
+                </div>
+                <div class="col-4 py-4">
+                    <img 
+                        src="../images_Folder/southernRedBishop.jpg" 
+                        alt="Southern Red Bishop"
+                        class="img-fluid">                    
+                </div>
+            </div>
+            <div class="row text-center mb-5">
+                <div class="col-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Click to vote for me!
+                        </label>
+                    </div> 
+                </div>
+                <div class="col-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Click to vote for me!
+                        </label>
+                    </div> 
+                </div>
+                <div class="col-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Click to vote for me!
+                        </label>
+                    </div> 
+                </div> 
+            </div>
+            <form class="like"></form> 
+        </div>
+    </div>
+
+    <!-- Link to Bootsrap's JavaScript Bundle -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

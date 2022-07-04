@@ -1,0 +1,172 @@
+<!--
+======================================================================= DESCRIPTION ========================================================================
+This is the Save For Later page, containing 2 sections:
+    1) Header section with title, subtitle & internal navigation links.
+    2) Saved Items section with items the user has saved from the website's other pages (i.e images, articles etc).
+    3) Get In Touch section with forms which allow users to leave comments and get in contact.
+    4) Try This section with title, image and buttons to show/hide the image, and a paragraph that moves and changes background colour when arrow 
+       keys are pressed.
+
+Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+===========================================================================================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save For Later</title>
+    <!-- Link to Bootstrap's CSS -->
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous"
+    >
+        <!-- Link to Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to SCSS file's compiled "main.css"-->
+    <link href="../SCSS_folder/main.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "scripting.js" -->
+    <script type="text/javascript" src="./JS_Folder/scripting.js"></script> 
+    <!-- Link to JS file "saveForLater.js" -->
+    <script type="text/javascript" src="./JS_Folder/saveForLaterScript.js"></script>
+</head>
+
+<body class="saveForLaterFolder">
+    <!-- Header section container with sub-container for <h1> header title "Save For Later", <h3> sub-header text and internal navigation links. -->
+    <div class="container-border" id="darkContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav justify-content-start">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../HTML_Folder/gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../HTML_Folder/getStarted.html">Getting Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../HTML_Folder/films.html">Films</a>
+                        </li>
+                    </ul>
+                    <h1 class="display-1 text-center" id="headerTitle">Save For Later</h1>
+                    
+                    <h3 class="fs-3 text-center mt-4 mb-5">
+                        Here are the items you added to "Save for Later"
+                    </h3>
+                    <hr class="my-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Saved Items section container with sub-container for adding saved items from sessionStorage (see saveForLaterScript.js). -->
+    <div class="container-border" id="saveForLaterContainer"> 
+        <div class="container w-75 pt-2 pb-5 text-center" >
+            <div class="row" id="savedItemsSection"></div>
+        </div>
+    </div>
+
+    <!-- Forms section container with "Get In Touch" section and "Contact Us" section. -->
+    <div class="container-border" id="lightContainer">
+        <div class="container w-75 pt-4 pb-5">
+            <div class="row">
+                <!-- Heading Section with <h1> "Get in touch" section title.-->
+                <div class="col-sm">
+                    <h1 class="display-5 fw-bold text-center pt-2 pb-1">Get in touch</h1>
+                </div>
+
+                <!-- "Get In Touch" Form Section with text-area and submit button. -->
+                <div class="mb-3">
+                    <p class="text-center pt-4 pb-0 text-secondary">
+                        Let us know what you'd like to see more of on this website
+                    </p>
+                    <form id="commentForm">
+                        <div class="form-floating mt-5 mb-2 leaveCommentForm">
+                            <input name="query" id="query" style="height: 70px" class="form-control leaveCommentForm" placeholder="Type here..."></input>
+                            <div class="col-sm  text-center">
+                                <button type="submit" class="btn btn-primary my-2 leaveCommentFormButton">Submit</button>
+                            </div>
+                            <hr class="my-4">
+                        </div> 
+                    </form>
+
+                    <!-- "Contact Us" Form Section with name, email and message input, and submit button. -->
+                    <div class="mb-3">
+                        <p class="text-center pt-5 pb-0 text-secondary">
+                            Contact Us
+                        </p>
+                        <!-- Bootstrap 5 starter form. -->
+                        <form id="contactForm">
+                            <!-- Name input. -->
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Name"/>
+                            </div>
+                            <!-- Email address input. -->
+                            <div class="mb-3">
+                                <label class="form-label" for="emailAddress">Email Address</label>
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"/>
+                            </div>
+                            <!-- Message input. -->
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                            </div>
+                            <!-- Form submit button. -->
+                            <div class="mb-3 text-center">
+                                <button type="submit" class="btn btn-primary my-2 contactUsFormButton">Submit</button>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- "Try This" section container. -->
+    <div class="container-border" id="lightContainer">
+        <div class="container w-75 pt-2 pb-5">
+            <div class="row">
+                <!-- Heading Section with <h1> "Try This" section title.-->
+                <div class="col-sm">
+                    <h1 class="display-5 fw-bold text-center pt-2 pb-1">Try This</h1>
+                </div>
+                <!-- Animate Image section with images and buttons.-->
+                <div class="row text-center">
+                    <div class="col-sm-6 py-4">
+                        <img src="./images_Folder/theBigYear.png" alt="The Big Year" class="img-fluid fadingImage" id="fadingImage">
+                        <button class="fadeOutButton btn btn-success mx-auto my-1">Hide this image</button>
+                        <button class="fadeInButton btn btn-success mx-auto my-1">Show this image</button>
+                    </div>
+                    <div class="col-sm-6 py-4 movingContainer">
+                        <p class="movingParagraph">Use the arrow keys on your keyboard to move me around and change my background colours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootsrap's JavaScript Bundle -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

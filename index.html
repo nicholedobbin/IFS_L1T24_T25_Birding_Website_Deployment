@@ -1,0 +1,152 @@
+<!--
+======================================================================= DESCRIPTION ======================================================================
+This is the home page for a Birding Hobby website. It contains 3 sub-sections:
+    1) Header section with background image, title, subtitle & links to resources/pages on the wesbite.
+    2) About section with welcome text and image.
+    3) Resources section with image and links to other pages on the wesbite (internal html files).
+
+Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+===========================================================================================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birding</title>
+    <!-- Link to Bootstrap's CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+      crossorigin="anonymous"
+    >
+    <!-- Link to Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to SCSS file's compiled 'main.css'-->
+    <link href="../SCSS_folder/main.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "scripting.js" -->
+    <script type="text/javascript" src="./JS_Folder/scripting.js"></script>
+  </head>
+
+  <body>
+    <!-- Header Section Container -->
+    <div class="jumbotron jumbotron-fluid mainHeaderBackgroundImage">    
+      <div class="container">
+        <!-- Heading Section with background image, <h1> header title "Birding", <p> sub-text & <a> navigation link buttons -->
+        <div class="headerBackgroundImage text-center shadow-1-strong rounded text-white">
+          <h1 class="display-1" id="mainHeaderTitle">Birding</h1>
+          <hr class="my-3">
+          <p class="fs-1 pt-4">
+            New to birding? 
+            <br>
+            Here are some fun resources to get you started.
+          </p>
+          <br>
+          <p class="text-secondary my-3">
+          <a class="btn btn-lg btn-primary" href="#about" role="button">About</a>
+          <a class="btn btn-lg btn-primary" href="#resources" role="button">Resources</a>
+          <a class="btn btn-lg btn-primary" href="./HTML_Folder/gallery.html" role="button">Gallery</a>
+          <a class="btn btn-lg btn-primary" href="./saveForLater.html" role="button">Saved Items</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section Container -->
+    <div class="container-border py-5" id="lightContainer">
+      <div class="container-fluid my-5">
+        <div class="row">
+            <!-- Information Section with <h2> "Welcome" subheading and <p> text. -->
+            <div class="col-sm-6 saveForLater text-center" id="about">
+                <h2 class="fw-bold sectionHeading">Welcome</h2>
+                <hr class="my-4 mx-4">
+                <p class="text-secondary">
+                  This website is dedicated to my favourite hobby - birding! 
+                  Browse the page to learn more about birds and bird-watching in South Africa.
+                </p>
+                <form class="like"></form>   
+            </div>
+            <!-- Image Section -->
+            <div class="col-sm-6 saveForLater text-center">
+                <img 
+                  src="./images_Folder/yellowCanary.jpg" 
+                  alt="yellow canary" 
+                  class="img-fluid d-block mx-auto w-75 rounded-5 fadingImage"
+                  id="fadingImage"
+                >
+                <form class="like"></form> 
+            </div>
+        </div>
+      </div> 
+    </div>
+
+    <!-- Resources Section Container -->
+    <div class="container-border py-5" id="darkContainer">
+      <div class="container my-5">
+        <div class="row">
+          <!-- Image Section -->
+          <div class="col-sm-6 text-center saveForLater"> 
+            <img 
+              src="./images_Folder/peacock.jpg" 
+              alt="peacock" 
+              class="img-fluid d-block mx-auto w-100 h-100 rounded-5"
+              >
+              <form class="like"></form> 
+          </div>
+          <!-- Information Section with <h2> "Resources" subheading, <p> text and internal link icons. -->
+          <div class="col-sm-6 mt-5 text-center saveForLater">
+            <h2 class="fw-bold sectionHeading " id="resources">Resources</h2>
+            <hr class="my-4 mx-4">
+            <p class="text-secondary">
+              Click on an icon to find out more.
+            </p>
+            <div class="row px-0 pb-2 mb-5 my-3 mx-0">
+              <div class="col">
+                <a href="./HTML_Folder/getStarted.html"><i class="bi bi-journal-check"></i></a>
+                Get started
+              </div>
+              <div class="col">
+                <a href="./HTML_Folder/gallery.html"><i class="bi bi-binoculars"></i></a>
+                Gallery
+              </div>
+              <div class="col">
+                <a href="./HTML_Folder/films.html"><i class="bi bi-camera-reels"></i></a>
+                Films
+              </div>
+            </div>
+            <form class="like"></form> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to Bootsrap's JavaScript Bundle -->
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
+     
+    
+  
+ 
+
+
+

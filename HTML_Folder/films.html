@@ -1,0 +1,150 @@
+<!--
+======================================================================= DESCRIPTION ======================================================================
+This is the Films page, containing 2 sections:
+    1) Header section with internal navigation links, title, images with labels and external links to image sources.
+    2) Favourites section with title, paragraph, drop-down select list and submit button form for user to select or submit their favourite film.
+
+Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+===========================================================================================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birding: Films</title>
+    <!-- Link to Bootstrap's CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+      crossorigin="anonymous"
+    >
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to SCSS file's compiled "main.css"-->
+    <link href="../SCSS_folder/main.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "scripting.js" -->
+    <script type="text/javascript" src="../JS_Folder/scripting.js"></script>    
+</head>
+
+<body>
+    <!-- Header and Films Section Container -->
+    <div class="container-border" id="darkContainer">
+        <div class="container">
+            <!-- Heading Section with internal navigation links, <h1> header title "Films" and <h3> sub-header text. -->
+            <div class="row">
+                <div class="col">
+                    <ul class="nav justify-content-start">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../HTML_Folder/gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../HTML_Folder/getStarted.html">Getting Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../saveForLater.html">Saved Items</a>
+                        </li>
+                    </ul>
+                    <h1 class="display-1 text-center" id="headerTitle">Films</h1>
+                    <hr class="my-3">
+                    <h3 class="fs-3 text-center mt-4 mb-5">
+                        Looking for some bird-related film inspo?
+                        <br>
+                        Check out our top 3 favourites
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Films Section with images, text and <a> external links. -->                
+            <div class="row text-center">
+                <div class="col-sm-4 py-4 saveForLater">
+                    <img src="../images_Folder/theBigYear.png" alt="The Big Year" class="img-fluid">
+                    <p> 
+                        <a 
+                            href="https://www.imdb.com/title/tt1053810/?ref_=ttmi_tt" 
+                            class="externalLink fs-5"
+                            target="_blank">
+                            The Big Year
+                        </a>
+                    </p>
+                    <form class="like"></form> 
+                </div>
+                <div class="col-sm-4 py-4 saveForLater">
+                    <img src="../images_Folder/theStarling.png" alt="The Starling" class="img-fluid">
+                    <p>
+                        <a 
+                            href="https://www.imdb.com/title/tt5164438/?ref_=ttmi_tt" 
+                            class="externalLink fs-5"
+                            target="_blank">
+                            The Starling
+                        </a>
+                    </p>
+                    <form class="like"></form> 
+                </div>
+                <div class="col-sm-4 py-4 saveForLater">
+                    <img src="../images_Folder/surfsUp.png" alt="Surf's Up"class="img-fluid">
+                    <p>
+                        <a 
+                            href="https://www.imdb.com/title/tt0423294/?ref_=tt_mv_close" 
+                            class="externalLink fs-5"
+                            target="_blank">
+                            Surf's Up
+                        </a>
+                    </p> 
+                    <form class="like"></form>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Favourite Bird Section Container -->
+    <div class="container-border" id="lightContainer">
+        <div class="container w-75 py-5">
+            <div class="row">
+                <!-- Heading Section with <h1> "What's your favourite?" section title and <p> text.-->
+                <div class="col-sm dropDownList text-center">
+                    <h1 class="display-5 fw-bold text-center pt-5 pb-1">What's your favourite?</h1>
+                    <hr class="my-2">
+                    <p class="pt-4 pb-0 text-secondary">
+                        Select your favourite bird film from our favourite's list below, or sumbit your own favourite to add to our list.
+                    </p>
+                </div>
+
+                <!-- Form Section with form text-area and submit button (Note: drop-down menu for this section is created dynamically in scripting.js) -->
+                <div class="form-floating mt-3 mb-3">
+                    <textarea 
+                        name="query" 
+                        id="query" 
+                        style="height: 70px" 
+                        class="form-control" 
+                        placeholder="Your favourite bird film">
+                    </textarea>
+                    <div class="col-sm  text-center">
+                        <button type="submit" class="btn btn-primary my-2">Submit</button>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootsrap's JavaScript Bundle -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+====================================================================== L1T20  REFERENCES =====================================================================
+
+Passing variables between pages:
+    * https://code-boxx.com/pass-variables-between-pages-javascript/#sec-pass
+    * https://www.youtube.com/watch?v=x0VcigW9kN0
+    * https://openjavascript.info/2022/06/09/pass-data-from-one-html-page-to-another/
+
+Understanding session and local storage:
+    * https://www.section.io/engineering-education/how-and-when-to-apply-session-storage-with-javascript/
+    * https://www.youtube.com/watch?v=RxUc6ZWwgfw
+    * https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
+jQuery:
+    * https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+    * https://www.w3schools.com/jquery/jquery_css.asp
+
+Creating like buttons:
+    * https://www.youtube.com/watch?v=baaSvb2jaaY
+    * https://fontawesome.com/
+
+JavaScript & HTML DOM:
+    * https://www.w3schools.com/js/js_htmldom_css.asp
+
+Bootstrap:
+    * https://getbootstrap.com/docs/4.0/utilities/sizing/
+
+Creating forms:
+    * https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+    * https://startbootstrap.com/guides/bootstrap-form-setup-guide
+    * https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+
+====================================================================== L1T15  REFERENCES =====================================================================
+
+Bootstrap 5:
+    * https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+Bootstrap: Apply image background to jumbotron:
+    * https://www.studytonight.com/bootstrap/responsive-bootstrap-4-jumbotron-background-image#:~:text=We%20can%20add%20a%20background,background%20image%20to%20the%20jumbotron.
+
+Bootstrap jumbotron:
+    * https://getbootstrap.com/docs/4.0/components/jumbotron/
+
+Bootstrap: Apply text over image:
+    * https://www.codegrepper.com/code-examples/whatever/text+over+image+bootstrap
+    * https://stackoverflow.com/questions/26148740/how-to-add-text-over-the-image-in-bootstrap
+    * https://stackoverflow.com/questions/26148740/how-to-add-text-over-the-image-in-bootstrap#:~:text=Add%20class%3Dcarousel%2Dcaption%20to,it%20align%20vertically%20at%20middle.)
+
+Bootstrap: background images:
+    * https://mdbootstrap.com/docs/standard/content-styles/background-image/
+    * https://stackoverflow.com/questions/36933107/stretch-image-to-fit-full-container-width-bootstrap#:~:text=you%20have%20to%20set%20the,to%20set%20them%20to%200.
+
+Bootstrap: Change button colour:
+    * https://www.studytonight.com/bootstrap/how-to-change-button-color-in-bootstrap-5
+
+Bootstrap: how to move text to bottom of cards:
+    * https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card#:~:text=Just%20add%20the%20align%2Dself,to%20align%20at%20the%20bottom.&text=By%20default%2C%20the%20card%20is,the%20card%2Dbody%20is%20not.
+
+Bootstrap Dropdown boxes:
+    * https://www.w3schools.com/bootstrap/bootstrap_ref_js_dropdown.asp
+
+Bootstram Form SetUp:
+    * https://startbootstrap.com/guides/bootstrap-form-setup-guide
+
+        
+
+
+
+

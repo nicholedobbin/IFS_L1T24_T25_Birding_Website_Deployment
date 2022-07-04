@@ -1,0 +1,176 @@
+/* ================================================================ DESCRIPTION ============================================================================= 
+
+    This is the CSS stylesheet for all the HTML files in this task.
+
+    Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+    Please see 'References.txt' for the list of sources I used in this project.
+
+    NOTE: 
+    I used camelCase for my own class/id names, to differentiate between Bootstrap's templates and my own.    
+
+
+==================================================================== VARIABLES ==============================================================================*/
+.mainHeaderBackgroundImage {
+  background-image: url(../images_Folder/pinkFlamingo.jpg);
+  background-size: cover;
+}
+
+.getStartedHeaderBackgroundImage {
+  background-image: url(../images_Folder/tawnyFlankedPrinia.jpg);
+  background-size: cover;
+}
+
+.headerBackgroundImage {
+  height: 100vh;
+}
+
+.thingsNeededBackgroundImage {
+  background-image: url(../images_Folder/darkCappedBulbul.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  background-color: #3DDBBB;
+  border-color: #3DDBBB;
+  border-radius: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 12px, 6px;
+  font-weight: bolder;
+}
+
+.saveForLaterButton {
+  font-size: small;
+}
+
+.nav-link {
+  color: #3DDBBB;
+}
+
+.externalLink {
+  color: #3DDBBB !important;
+  text-decoration: none !important;
+}
+
+.smallExternalLink {
+  color: #3D3D3D;
+  font-size: small;
+}
+
+body {
+  background-color: #222;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-secondary {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  margin-block: auto;
+}
+
+.display-1 {
+  font-size: 80px;
+}
+
+#mainHeaderTitle {
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+#headerTitle {
+  padding: 48px 0px 24px;
+  margin: 0px;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}
+
+.sectionHeading {
+  font-size: 35px;
+}
+
+#lightContainer {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+#darkContainer {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+#savedItem {
+  border-style: solid;
+  border-color: #f5f5f5;
+  color: #f5f5f5 !important;
+}
+
+.card-text {
+  color: #222;
+}
+
+.my-height {
+  height: 250px !important;
+}
+
+.table-accent {
+  color: #3DDBBB;
+  font-size: 20px;
+}
+
+#ethicsList {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#thingsNeededList {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+td, th {
+  color: grey;
+}
+
+.form-label {
+  padding-left: 10px;
+}
+
+.blockquote {
+  padding-top: 40%;
+}
+
+.blockquote-footer {
+  padding-bottom: 40%;
+}
+
+.bi {
+  font-size: 3rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  color: #3DDBBB;
+}
+
+.likeButton {
+  color: lightgrey;
+  font-size: 2em;
+}
+
+.heart i.fa-heart {
+  color: #3DDBBB;
+}
+
+.movingParagraph {
+  border-color: #3DDBBB;
+  border-style: solid;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */

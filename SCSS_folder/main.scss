@@ -1,0 +1,262 @@
+/* ================================================================ DESCRIPTION ============================================================================= 
+ 
+    This is the CSS stylesheet for all the HTML files in this task.
+
+    Please see 'scripting.js' and "saveForLaterScript.js" for description of this website's functionality.
+    Please see 'References.txt' for the list of sources I used in this project.
+
+    NOTE: 
+    I used camelCase for my own class/id names, to differentiate between Bootstrap's templates and my own.    
+
+
+==================================================================== VARIABLES ==============================================================================*/
+
+// Declare colour variables.
+$seaGreen: #3DDBBB;
+$bovineGrey: #222;
+$smokeyWhite: #f5f5f5;
+$darkGrey: #3D3D3D;
+
+
+//=================================================================== IMAGES ================================================================================
+
+// Add index.html header's background image and set background-size.
+.mainHeaderBackgroundImage {
+    background-image: url(../images_Folder/pinkFlamingo.jpg);
+    background-size: cover;
+}
+
+// Add getStarted.html header's background image and set background-size.
+.getStartedHeaderBackgroundImage {
+    background-image: url(../images_Folder/tawnyFlankedPrinia.jpg);
+    background-size: cover;
+}
+
+// Set index.html and getStarted.html's header background image height.
+.headerBackgroundImage {
+    height: 100vh;
+}
+
+// Add getStarted.html's "Things Needed" background image and set width, height and background size.
+.thingsNeededBackgroundImage {
+    background-image: url(../images_Folder/darkCappedBulbul.jpg);
+    background-size: cover; 
+    width: 100%; 
+    height: 100%;
+}
+
+
+//=================================================================== BUTTONS ===============================================================================
+
+// Set button style for all buttons.
+.btn {
+    background-color: $seaGreen;
+    border-color: $seaGreen;
+    border-radius: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 12px, 6px;
+    font-weight: bolder;
+}
+
+// Change saveForLaterButton's font-size to small.
+.saveForLaterButton {
+    font-size: small;
+}
+
+
+//============================================================= INTERNAL AND EXTERNAL LINKS ==================================================================
+
+// Style getStarted.html, gallery.html and films.html's internal navigation links with Boostrap class: "nav-link".
+.nav-link {
+    color: $seaGreen;
+}
+
+// Style films.html and getStarted.html's external link colour and remove underline in text-decoration.  
+.externalLink {
+    color: $seaGreen !important;
+    text-decoration: none !important;
+} 
+
+// Style gallery.html's external links in table, in "Spotted" section. 
+.smallExternalLink {
+    color: $darkGrey;
+    font-size: small;
+}
+
+
+//==================================================================== BODY ==================================================================================
+
+// Set all HTML body background colour and font-family.
+body {
+    background-color: $bovineGrey;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Style all HTML font size and weight for <p> and <a> elements with Bootstrap class: "text-secondary".
+.text-secondary {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+// Style index.html's "About" and "Resources" sub-sections.
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-block: auto;
+}
+
+
+//================================================================ HEADERS & HEADINGS ========================================================================
+
+// Style all HTML <h1> header titles with Bootstrap's class: "display-1".
+.display-1 {
+    font-size: 80px;
+}
+
+// Style index.html's <h1> header title. 
+#mainHeaderTitle {
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+
+// Style all other HTML files <h1> header titles. 
+#headerTitle {
+    padding: 48px 0px 24px;
+    margin: 0px;
+}
+
+// Style all HTML font weight for <h1> and <h2> elements with Bootstrap class: "fw-bold".
+.fw-bold {
+    font-weight: 600!important;
+}
+
+// Style index.html and getStarted.html's sub-section headings <h2> elements.
+.sectionHeading {
+    font-size: 35px;
+}
+
+
+//=============================================================== BODY SUB-SECTIONS ==========================================================================
+
+// Style all HTML light containers.
+#lightContainer {
+    background-color: $smokeyWhite;
+    color: $bovineGrey;
+    //height: 500px;
+}
+
+// Style all HTML dark containers.
+#darkContainer {
+    background-color: $bovineGrey;
+    color: $smokeyWhite;
+}
+
+// Add border to saveForLater.html's "Saved Items".
+#savedItem {
+    border-style: solid;
+    border-color: $smokeyWhite;
+    color: $smokeyWhite !important;
+}
+
+
+//=============================================================== BOOTSTRAP CARDS ===========================================================================
+
+// Style gallery.html's card text in "Gallery" sub-section. 
+.card-text {
+    color: $bovineGrey;
+}
+
+// Style gallery.html's card height in "Gallery" sub-section.
+.my-height {
+    height: 250px!important;
+}
+
+
+//================================================================ TABLES & LISTS =========================================================================
+
+// Style gallery.html's table in "Spotted" sub-section.
+.table-accent {
+    color: $seaGreen;
+    font-size: 20px;
+}
+
+// Style getStarted.html's list in "Ethics" sub-section.
+#ethicsList {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+// Style getStarted.html's list in "Things You'll Need" sub-section.
+#thingsNeededList {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+// Set gallery.html's table data and table header cells.
+td, th {
+    color: grey;
+}
+
+
+//====================================================================== FORMS ============================================================================
+
+// Style saveForLater.html's form labels.
+.form-label {
+    padding-left: 10px;
+}
+
+
+//=================================================================== BLOCKQUOTES =========================================================================
+
+// Style getStarted.html's block quote text in "Things You'll Need" sub-section.
+.blockquote {
+    padding-top: 40%;
+}
+
+// Style getStarted.html's block quote footer in "Things You'll Need" sub-section.
+.blockquote-footer {
+    padding-bottom: 40%;
+}
+
+
+//======================================================================= ICONS ============================================================================
+
+//Style index.html's Bootstrap Icons in "Resources" sub-section.
+.bi {
+    font-size: 3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    color: $seaGreen;
+}
+
+// Style saveForLater.html's like buttons.
+.likeButton {
+    color: lightgrey;
+    font-size: 2em;
+}
+
+// Style all HTML file's FontAwesome Icons (heart icon for like button).
+.heart i.fa-heart {
+    color: $seaGreen;
+}
+
+
+//=================================================================== ANIMATIONS ============================================================================
+
+// Set saveForLater.html's <p> class: "movingParagraph" position and add border.
+.movingParagraph {
+    border-color: $seaGreen;
+    border-style: solid;
+    position: absolute;
+}
+
+
+//===========================================================================================================================================================
+
+
+
+
+
+

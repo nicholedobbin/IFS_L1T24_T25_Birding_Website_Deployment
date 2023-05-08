@@ -12,7 +12,7 @@ It includes some JavaScript functionality to save items on the site in a persona
 
 ## Installation
 To install this website:
-1. Copy and paste [this URL](https://nicholedobbin.github.io/Birding_Website_Deployment//index.html) into your browser. 
+1. Copy and paste [this URL](https://nicholedobbin.github.io/Birding-Website-Deployment/HTML_Folder/index.html) into your browser. 
 2. Right-click on the opened page and select ‘inspect’ to see the source code for the website.
 3. Alternatively, select the desired files/folders in this repository above to see the source code for the website.
 
